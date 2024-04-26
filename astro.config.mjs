@@ -6,6 +6,7 @@ import mdx from "@astrojs/mdx";
 
 // https://astro.build/config
 export default defineConfig({
+  site: "https://hanshenrik.github.io/morskapet/",
   prefetch: true,
-  integrations: [tailwind(), sitemap(), robotsTxt(), mdx()]
+  integrations: [tailwind(), sitemap(), robotsTxt(), mdx()],
 });
