@@ -1,16 +1,19 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import { Image } from "astro:assets";
-import morskapetsVilleVeierImg from "../images/morskapets-ville-veier-monofon.jpg";
+import morskapetsVilleVeierImg from "../images/morskapets-ville-veier-foto-jonas-jeremiassen-tomter.jpg";
 ---
 
 <Layout title="Morskapets ville veier | Lisa Nybrott">
-  <main class="flex flex-col justify-center items-center h-full w-full">
-    <Image
-      src={morskapetsVilleVeierImg}
-      alt="Morskapets ville veier"
-      class="w-full max-w-xl rounded-xl"
-      quality={100}
-    />
+  <main class="flex flex-col justify-center items-center h-full w-full py-16">
+    <figure class="text-right text-sm">
+      <Image
+        src={morskapetsVilleVeierImg}
+        alt="Morskapets ville veier"
+        class="w-full max-w-xl rounded-xl"
+        quality={100}
+      />
+      <span>Foto: Jens Jeremiassen Tomter</span>
+    </figure>
   </main>
 </Layout>
