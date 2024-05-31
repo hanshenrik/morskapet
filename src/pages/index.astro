@@ -1,11 +1,22 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import Prose from "../components/Prose.astro";
+import Footer from "../components/Footer.astro";
+import Header from "../components/Header.astro";
 import { Image } from "astro:assets";
+import { getImage } from "astro:assets";
+import morskapetsVilleVeierBannerImg from "../images/morskapets-ville-veier-banner-foto-jonas-jeremiassen-tomter.jpg";
 import morskapetsVilleVeierImg from "../images/morskapets-ville-veier-foto-jonas-jeremiassen-tomter.jpg";
+
+const optimizedBanner = await getImage({
+  src: morskapetsVilleVeierBannerImg,
+  format: "webp",
+});
 ---
 
 <Layout title="Morskapets ville veier | Lisa Nybrott">
-  <main class="flex flex-col justify-center items-center h-full w-full py-16 px-4">
+  <h1>Morskapets ville veier</h1>
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-8 justify-center w-full">
     <figure class="text-right text-sm">
       <Image
         src={morskapetsVilleVeierImg}
@@ -15,5 +26,35 @@ import morskapetsVilleVeierImg from "../images/morskapets-ville-veier-foto-jonas
       />
       <span>Foto: Jens Jeremiassen Tomter</span>
     </figure>
-  </main>
+    <article class="max-w-2xl">
+      <Prose>
+        <p>
+          Med en forlokkende blanding av rå ærlighet, sårbarhet, humor og
+          fengslende melodier, har Lisa Nybrott laget en konsertmonolog som går
+          dypt inn i det store hamskiftet det er å bli mor: Morskapets Ville
+          Veier.
+        </p>
+
+        <p>
+          Fra de søvnløse nettene til den overveldende kjærligheten, blottlegger
+          Lisa nybrott morsrollens realiteter med en forfriskende blanding av
+          visdom og vidd. Gjennom en serie inderlige monologer og egenskrevne
+          sanger inviterer hun publikum inn i sin verden. Musikken fungerer som
+          et kraftfullt lydspor til berg-og-dal-banen av følelser som er
+          morsrollen.
+        </p>
+
+        <p>
+          Med sin unike blanding av humor, hjerte og sjel, deler hun sine
+          erfaringer på en ærlig og gjenkjennelig måte.
+        </p>
+
+        <p>
+          Så, enten du er en mor, kommende mor eller bare setter pris på den rå
+          og intrikate opplevelsen det er å være menneske: ikke gå glipp av
+          konsertmonologen Morskapets ville veier.
+        </p>
+      </Prose>
+    </article>
+  </div>
 </Layout>
