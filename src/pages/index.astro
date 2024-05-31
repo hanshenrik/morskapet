@@ -15,29 +15,29 @@ const optimizedBanner = await getImage({
 ---
 
 <Layout title="Morskapets ville veier | Lisa Nybrott">
-  <h1>Morskapets ville veier</h1>
-  <div class="grid grid-cols-1 md:grid-cols-2 gap-8 justify-center w-full">
-    <figure class="text-right text-sm">
-      <Image
-        src={morskapetsVilleVeierImg}
-        alt="Morskapets ville veier"
-        class="w-full max-w-xl rounded-xl"
-        quality={100}
-      />
-      <span>Foto: Jens Jeremiassen Tomter</span>
-    </figure>
-    <article class="max-w-2xl">
-      <Prose>
+  <div class="space-y-8">
+    <h1 class="h1">Morskapets ville veier</h1>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 justify-center w-full">
+      <figure class="text-right text-sm">
+        <Image
+          src={morskapetsVilleVeierImg}
+          alt="Morskapets ville veier"
+          class="w-full max-w-xl rounded-xl"
+          quality={100}
+        />
+        <span>Foto: Jens Jeremiassen Tomter</span>
+      </figure>
+      <article class="space-y-4">
         <p>
           Med en forlokkende blanding av rå ærlighet, sårbarhet, humor og
           fengslende melodier, har Lisa Nybrott laget en konsertmonolog som går
-          dypt inn i det store hamskiftet det er å bli mor: Morskapets Ville
-          Veier.
+          dypt inn i det store hamskiftet det er å bli mor: «Morskapets ville
+          veier».
         </p>
 
         <p>
           Fra de søvnløse nettene til den overveldende kjærligheten, blottlegger
-          Lisa nybrott morsrollens realiteter med en forfriskende blanding av
+          Lisa Nybrott morsrollens realiteter med en forfriskende blanding av
           visdom og vidd. Gjennom en serie inderlige monologer og egenskrevne
           sanger inviterer hun publikum inn i sin verden. Musikken fungerer som
           et kraftfullt lydspor til berg-og-dal-banen av følelser som er
@@ -52,9 +52,29 @@ const optimizedBanner = await getImage({
         <p>
           Så, enten du er en mor, kommende mor eller bare setter pris på den rå
           og intrikate opplevelsen det er å være menneske: ikke gå glipp av
-          konsertmonologen Morskapets ville veier.
+          konsertmonologen «Morskapets ville veier».
         </p>
-      </Prose>
+      </article>
+    </div>
+
+    <article class="space-y-8">
+      <h1 class="h1">Medvirkende</h1>
+
+      <div class="space-y-4">
+        <div class="space-y-2">
+          <h2 class="h3">Lisa Nybrott</h2>
+          <div class="text-lg">Tekstforfatter, skuespiller, sanger</div>
+        </div>
+        <p>Informasjon her…</p>
+      </div>
+
+      <div class="space-y-4">
+        <div class="space-y-2">
+          <h2 class="h3">Hans Henrik Grønsleth</h2>
+          <div class="text-lg">Pianist</div>
+        </div>
+        <p>Informasjon her…</p>
+      </div>
     </article>
   </div>
 </Layout>
