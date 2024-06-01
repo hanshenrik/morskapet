@@ -1,8 +1,18 @@
 ---
-
+import Link from "./Link.astro";
 ---
 
 <div class="py-16 space-y-8">
   <h1 class="h1" id="booking">Booking</h1>
-  <div>Kommer…</div>
+  <p>
+    Ta gjerne kontakt dersom du ønsker informasjon. Vi tilpasser forestillingen
+    til dine behov.
+  </p>
+  <Link
+    class_="bg-blue-500 px-4 py-2 text-white rounded hover:bg-blue-600 transition-colors"
+    external
+    unstyled
+    href="https://docs.google.com/forms/d/e/1FAIpQLSfuVeFITwlyQ47trpwvsgkeTaWK6gGDXajc6Dt2cvOqUnnK9g/viewform"
+    >Ta kontakt
+  </Link>
 </div>
